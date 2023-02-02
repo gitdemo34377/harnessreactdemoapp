@@ -42,7 +42,7 @@ pipeline:
                   spec:
                     connectorRef: account.aws_fm
                     region: ap-south-1
-                    bucket: shellpov
+                    bucket: shellharnesspov
                     key: <+pipeline.stages.shellapp.spec.execution.steps.CreatHash.output.outputVariables.YARN_LOCK_HASH>
                     archiveFormat: Tar
               - step:
@@ -82,7 +82,7 @@ pipeline:
                   spec:
                     connectorRef: account.aws_fm
                     region: ap-south-1
-                    bucket: shellpov
+                    bucket: shellharnesspov
                     key: <+pipeline.stages.shellapp.spec.execution.steps.CreateHash.output.outputVariables.YARN_LOCK_HASH>
                     sourcePaths:
                       - node_modules
