@@ -40,7 +40,7 @@ pipeline:
                   name: Restore Cache From S3
                   identifier: Restore_Cache_From_S3
                   spec:
-                    connectorRef: account.aws_fm
+                    connectorRef: account.awsfm
                     region: ap-south-1
                     bucket: shellharnesspov
                     key: <+pipeline.stages.shellapp.spec.execution.steps.CreatHash.output.outputVariables.YARN_LOCK_HASH>
@@ -80,7 +80,7 @@ pipeline:
                   name: Save Cache to S3
                   identifier: Save_Cache_to_S3
                   spec:
-                    connectorRef: account.aws_fm
+                    connectorRef: account.awsfm
                     region: ap-south-1
                     bucket: shellharnesspov
                     key: <+pipeline.stages.shellapp.spec.execution.steps.CreateHash.output.outputVariables.YARN_LOCK_HASH>
