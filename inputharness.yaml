@@ -1,0 +1,14 @@
+inputSet:
+  name: branchname
+  identifier: branchname
+  orgIdentifier: default
+  projectIdentifier: Mobile_App_Builds
+  pipeline:
+    identifier: reactmobapp
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
