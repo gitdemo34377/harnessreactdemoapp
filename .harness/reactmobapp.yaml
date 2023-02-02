@@ -7,8 +7,8 @@ pipeline:
   properties:
     ci:
       codebase:
-        connectorRef: account.fmazlabsgit
-        repoName: fm-react-sample-app
+        connectorRef: account.gitconnector
+        repoName: harnessreactdemoapp
         build: <+input>
   stages:
     - stage:
@@ -104,14 +104,14 @@ pipeline:
               name: DinD
               type: Service
               spec:
-                connectorRef: account.harnessImage
+                connectorRef: account.dockertestconnector
                 image: docker:dind
             - identifier: Hash
               name: Hash
               type: Service
               description: Node Image
               spec:
-                connectorRef: account.harnessImage
+                connectorRef: account.dockertestconnector
                 image: node:18
         variables: []
   timeout: 10h
