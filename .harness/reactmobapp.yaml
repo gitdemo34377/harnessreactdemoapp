@@ -62,6 +62,7 @@ pipeline:
                       product_domain: http://52.66.59.93:9000
                       product_project_name: shellproject
                       product_project_key: <+secrets.getValue("shellproject")>
+                      fail_on_severity: Critical
                     imagePullPolicy: Always
                   description: Scan Sonaqube
                   timeout: 1h
