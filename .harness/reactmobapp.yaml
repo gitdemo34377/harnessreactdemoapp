@@ -58,11 +58,11 @@ pipeline:
                       product_config_name: default
                       repository_project: harnessreactdemoapp
                       repository_branch: <+codebase.branch>
-                      product_access_token: <+secrets.getValue("shellcisonartoken")>
-                      product_domain: http://43.205.231.118:9000
-                      product_project_name: shellciproject
-                      product_project_key: <+secrets.getValue("shellciproject")>
-                      fail_on_severity: Critical
+                      product_access_token: <+secrets.getValue("shellsonartoken")>
+                      product_domain: http://52.66.59.93:9000
+                      product_project_name: shellproject
+                      product_project_key: <+secrets.getValue("shellproject")>
+                      fail_on_severity: Info
                     imagePullPolicy: Always
                   description: Scan Sonaqube
                   timeout: 1h
