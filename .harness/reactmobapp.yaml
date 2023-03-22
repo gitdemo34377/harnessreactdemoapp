@@ -58,9 +58,9 @@ pipeline:
                       product_config_name: default
                       repository_project: harnessreactdemoapp
                       repository_branch: <+codebase.branch>
-                      product_access_token: <+secrets.getValue("shellsonartoken")>
+                      product_access_token: <+secrets.getValue("shellsonaraccount")>
                       product_domain: http://52.66.59.93:9000
-                      product_project_name: shellproject
+                      product_project_name: shellciproject
                       product_project_key: <+secrets.getValue("shellproject")>
                       fail_on_severity: Info
                     imagePullPolicy: Always
