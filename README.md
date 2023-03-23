@@ -1,4 +1,4 @@
-# Dockerized ReactJS application test4
+# Dockerized ReactJS application shell-test
 
 ![Docker plus React plus Codefresh](docker-reactjs-codefresh.jpg)
 
